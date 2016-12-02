@@ -29,7 +29,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for
 "Vim.
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 
 "A Vim plugin which shows a git diff in the 'gutter' (sign column).
 Plugin 'airblade/vim-gitgutter'
