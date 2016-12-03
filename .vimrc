@@ -108,7 +108,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 "open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
+"open a NERDTree automatically when vim starts up && no files be opened.
+autocmd vimenter * if !argc() | NERDTree | endif
+
 "CTRL+n to close/open NERDtree
 map <C-n> :NERDTreeToggle<CR>
 "close file and auto close NERDTree
