@@ -29,7 +29,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for
 "Vim.
-"Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'
 
 "A Vim plugin which shows a git diff in the 'gutter' (sign column).
 Plugin 'airblade/vim-gitgutter'
@@ -109,6 +109,9 @@ let g:syntastic_check_on_wq = 0
 
 "open a NERDTree automatically when vim starts up
 "autocmd vimenter * NERDTree
+"open a NERDTree automatically when vim starts up && no files be opened.
+autocmd vimenter * if !argc() | NERDTree | endif
+
 "CTRL+n to close/open NERDtree
 map <C-n> :NERDTreeToggle<CR>
 "close file and auto close NERDTree
@@ -143,3 +146,5 @@ nmap <F8> :TagbarToggle<CR>
 
 "IndentLine setting intdented with tab
 set list lcs=tab:\|\ "(here is a space)
+
+let g:ycm_show_diagnostics_ui = 0
